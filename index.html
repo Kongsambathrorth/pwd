@@ -48,7 +48,7 @@ body {
 }
 
 .accordion-content.active {
-    max-height: 1000px; /* Adjust as needed */
+    max-height: 2000px; /* Adjust as needed */
     padding: 1.5rem;
 }
 
@@ -771,85 +771,112 @@ body.theme-high-contrast .navigation-controls {
 
                     <!-- Types of Disabilities -->
                     <div class="bg-white p-6 rounded-xl shadow-lg lesson-card">
-                        <h3 class="text-xl font-semibold text-gray-900 mb-4">Types of Disabilities</h3>
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Types of Disabilities</h3>
+                        <p class="text-gray-600 mb-4">Click on each type to learn more.</p>
                         <div class="space-y-4">
                             <!-- Card 1: Physical Disabilities -->
-                            <div class="p-6 border rounded-lg bg-gray-50">
-                                <h4 class="text-lg font-medium text-gray-800 mb-4">Physical Disabilities</h4>
-                                <div class="flex flex-col sm:flex-row items-center gap-4">
-                                    <div class="sm:w-2/3">
-                                        Challenges related to movement, coordination, or functioning of the body. <br><em>Example: A customer who uses a prosthetic leg or has difficulty holding a pen.</em>
-                                        <button class="tts-button" aria-label="Listen to physical disabilities description" data-tts-text="Physical Disabilities. Challenges related to movement, coordination, or functioning of the body. Example: A customer who uses a prosthetic leg or has difficulty holding a pen.">
-                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19.114 5.636a9 9 0 010 12.728M16.463 8.288a5.25 5.25 0 010 7.424M6.75 8.25l4.72-4.72a.75.75 0 011.28.53v15.88a.75.75 0 01-1.28.53l-4.72-4.72H4.51c-.88 0-1.704-.507-1.938-1.354A9.01 9.01 0 012.25 12c0-.83.112-1.633.322-2.396C2.806 8.756 3.63 8.25 4.51 8.25H6.75z"></path></svg>
-                                        </button>
-                                    </div>
-                                    <div class="sm:w-1/3">
-                                        <img src="./resources/physical.png" alt="Image for physical disability" class="rounded-md shadow-sm w-full">
+                            <div class="border rounded-lg">
+                                <button class="accordion-button w-full flex justify-between items-center p-6 text-left text-lg font-medium text-gray-800 hover:bg-gray-50 focus:outline-none">
+                                    <span>Physical Disabilities</span>
+                                    <svg class="w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                                </button>
+                                <div class="accordion-content bg-gray-50">
+                                    <div class="flex flex-col sm:flex-row items-center gap-4">
+                                        <div class="sm:w-2/3">
+                                            Challenges related to movement, coordination, or functioning of the body. <br><em>Example: A customer who uses a prosthetic leg or has difficulty holding a pen.</em>
+                                            <button class="tts-button" aria-label="Listen to physical disabilities description" data-tts-text="Physical Disabilities. Challenges related to movement, coordination, or functioning of the body. Example: A customer who uses a prosthetic leg or has difficulty holding a pen.">
+                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19.114 5.636a9 9 0 010 12.728M16.463 8.288a5.25 5.25 0 010 7.424M6.75 8.25l4.72-4.72a.75.75 0 011.28.53v15.88a.75.75 0 01-1.28.53l-4.72-4.72H4.51c-.88 0-1.704-.507-1.938-1.354A9.01 9.01 0 012.25 12c0-.83.112-1.633.322-2.396C2.806 8.756 3.63 8.25 4.51 8.25H6.75z"></path></svg>
+                                            </button>
+                                        </div>
+                                        <div class="sm:w-1/3">
+                                            <img src="./resources/physical.png" alt="Image for physical disability" class="rounded-md shadow-sm w-full">
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                             <!-- Card 2: Sensory Disabilities -->
-                            <div class="p-6 border rounded-lg bg-gray-50">
-                                <h4 class="text-lg font-medium text-gray-800 mb-4">Sensory Disabilities</h4>
-                                <div class="flex flex-col sm:flex-row items-center gap-4">
-                                    <div class="sm:w-2/3">
-                                        Differences in how a person experiences sensory information, such as vision or hearing. <br><em>Example: A customer who is blind and needs documents read aloud, or a customer who is Deaf and uses Khmer Sign Language.</em>
-                                        <button class="tts-button" aria-label="Listen to sensory disabilities description" data-tts-text="Sensory Disabilities. Differences in how a person experiences sensory information, such as vision or hearing. Example: A customer who is blind and needs documents read aloud, or a customer who is Deaf and uses Khmer Sign Language.">
-                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19.114 5.636a9 9 0 010 12.728M16.463 8.288a5.25 5.25 0 010 7.424M6.75 8.25l4.72-4.72a.75.75 0 011.28.53v15.88a.75.75 0 01-1.28.53l-4.72-4.72H4.51c-.88 0-1.704-.507-1.938-1.354A9.01 9.01 0 012.25 12c0-.83.112-1.633.322-2.396C2.806 8.756 3.63 8.25 4.51 8.25H6.75z"></path></svg>
-                                        </button>
-                                    </div>
-                                    <div class="sm:w-1/3">
-                                        <img src="./resources/sensory.png" alt="Image for sensory disability" class="rounded-md shadow-sm w-full">
+                            <div class="border rounded-lg">
+                                <button class="accordion-button w-full flex justify-between items-center p-6 text-left text-lg font-medium text-gray-800 hover:bg-gray-50 focus:outline-none">
+                                    <span>Sensory Disabilities</span>
+                                    <svg class="w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                                </button>
+                                <div class="accordion-content bg-gray-50">
+                                    <div class="flex flex-col sm:flex-row items-center gap-4">
+                                        <div class="sm:w-2/3">
+                                            Differences in how a person experiences sensory information, such as vision or hearing. <br><em>Example: A customer who is blind and needs documents read aloud, or a customer who is Deaf and uses Khmer Sign Language.</em>
+                                            <button class="tts-button" aria-label="Listen to sensory disabilities description" data-tts-text="Sensory Disabilities. Differences in how a person experiences sensory information, such as vision or hearing. Example: A customer who is blind and needs documents read aloud, or a customer who is Deaf and uses Khmer Sign Language.">
+                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19.114 5.636a9 9 0 010 12.728M16.463 8.288a5.25 5.25 0 010 7.424M6.75 8.25l4.72-4.72a.75.75 0 011.28.53v15.88a.75.75 0 01-1.28.53l-4.72-4.72H4.51c-.88 0-1.704-.507-1.938-1.354A9.01 9.01 0 012.25 12c0-.83.112-1.633.322-2.396C2.806 8.756 3.63 8.25 4.51 8.25H6.75z"></path></svg>
+                                            </button>
+                                        </div>
+                                        <div class="sm:w-1/3">
+                                            <img src="./resources/sensory.png" alt="Image for sensory disability" class="rounded-md shadow-sm w-full">
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                             <!-- Card 3: Intellectual Disabilities -->
-                            <div class="p-6 border rounded-lg bg-gray-50">
-                                <h4 class="text-lg font-medium text-gray-800 mb-4">Intellectual Disabilities</h4>
-                                <div class="flex flex-col sm:flex-row items-center gap-4">
-                                    <div class="sm:w-2/3">
-                                        Conditions affecting intellectual functioning and adaptive behavior. <br><em>Example: A customer who may need complex financial information explained in simple, clear terms.</em>
-                                        <button class="tts-button" aria-label="Listen to intellectual disabilities description" data-tts-text="Intellectual Disabilities. Conditions affecting intellectual functioning and adaptive behavior. Example: A customer who may need complex financial information explained in simple, clear terms.">
-                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19.114 5.636a9 9 0 010 12.728M16.463 8.288a5.25 5.25 0 010 7.424M6.75 8.25l4.72-4.72a.75.75 0 011.28.53v15.88a.75.75 0 01-1.28.53l-4.72-4.72H4.51c-.88 0-1.704-.507-1.938-1.354A9.01 9.01 0 012.25 12c0-.83.112-1.633.322-2.396C2.806 8.756 3.63 8.25 4.51 8.25H6.75z"></path></svg>
-                                        </button>
-                                    </div>
-                                    <div class="sm:w-1/3">
-                                        <img src="./resources/intellectual.png" alt="Image for intellectual disability" class="rounded-md shadow-sm w-full">
+                            <div class="border rounded-lg">
+                                <button class="accordion-button w-full flex justify-between items-center p-6 text-left text-lg font-medium text-gray-800 hover:bg-gray-50 focus:outline-none">
+                                    <span>Intellectual Disabilities</span>
+                                    <svg class="w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                                </button>
+                                <div class="accordion-content bg-gray-50">
+                                    <div class="flex flex-col sm:flex-row items-center gap-4">
+                                        <div class="sm:w-2/3">
+                                            Conditions affecting intellectual functioning and adaptive behavior. <br><em>Example: A customer who may need complex financial information explained in simple, clear terms.</em>
+                                            <button class="tts-button" aria-label="Listen to intellectual disabilities description" data-tts-text="Intellectual Disabilities. Conditions affecting intellectual functioning and adaptive behavior. Example: A customer who may need complex financial information explained in simple, clear terms.">
+                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19.114 5.636a9 9 0 010 12.728M16.463 8.288a5.25 5.25 0 010 7.424M6.75 8.25l4.72-4.72a.75.75 0 011.28.53v15.88a.75.75 0 01-1.28.53l-4.72-4.72H4.51c-.88 0-1.704-.507-1.938-1.354A9.01 9.01 0 012.25 12c0-.83.112-1.633.322-2.396C2.806 8.756 3.63 8.25 4.51 8.25H6.75z"></path></svg>
+                                            </button>
+                                        </div>
+                                        <div class="sm:w-1/3">
+                                            <img src="./resources/intellectual.png" alt="Image for intellectual disability" class="rounded-md shadow-sm w-full">
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                             <!-- Card 4: Psychosocial Disabilities -->
-                            <div class="p-6 border rounded-lg bg-gray-50">
-                                <h4 class="text-lg font-medium text-gray-800 mb-4">Psychosocial Disabilities</h4>
-                                <div class="flex flex-col sm:flex-row items-center gap-4">
-                                    <div class="sm:w-2/3">
-                                        Mental health conditions that can affect daily functioning. <br><em>Example: A customer with anxiety who may need a quiet space for their appointment.</em>
-                                        <button class="tts-button" aria-label="Listen to psychosocial disabilities description" data-tts-text="Psychosocial Disabilities. Mental health conditions that can affect daily functioning. Example: A customer with anxiety who may need a quiet space for their appointment.">
-                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19.114 5.636a9 9 0 010 12.728M16.463 8.288a5.25 5.25 0 010 7.424M6.75 8.25l4.72-4.72a.75.75 0 011.28.53v15.88a.75.75 0 01-1.28.53l-4.72-4.72H4.51c-.88 0-1.704-.507-1.938-1.354A9.01 9.01 0 012.25 12c0-.83.112-1.633.322-2.396C2.806 8.756 3.63 8.25 4.51 8.25H6.75z"></path></svg>
-                                        </button>
-                                    </div>
-                                    <div class="sm:w-1/3">
-                                        <img src="./resources/psychosocial.png" alt="Image for psychosocial disability" class="rounded-md shadow-sm w-full">
+                            <div class="border rounded-lg">
+                                <button class="accordion-button w-full flex justify-between items-center p-6 text-left text-lg font-medium text-gray-800 hover:bg-gray-50 focus:outline-none">
+                                    <span>Psychosocial Disabilities</span>
+                                    <svg class="w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                                </button>
+                                <div class="accordion-content bg-gray-50">
+                                    <div class="flex flex-col sm:flex-row items-center gap-4">
+                                        <div class="sm:w-2/3">
+                                            Mental health conditions that can affect daily functioning. <br><em>Example: A customer with anxiety who may need a quiet space for their appointment.</em>
+                                            <button class="tts-button" aria-label="Listen to psychosocial disabilities description" data-tts-text="Psychosocial Disabilities. Mental health conditions that can affect daily functioning. Example: A customer with anxiety who may need a quiet space for their appointment.">
+                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19.114 5.636a9 9 0 010 12.728M16.463 8.288a5.25 5.25 0 010 7.424M6.75 8.25l4.72-4.72a.75.75 0 011.28.53v15.88a.75.75 0 01-1.28.53l-4.72-4.72H4.51c-.88 0-1.704-.507-1.938-1.354A9.01 9.01 0 012.25 12c0-.83.112-1.633.322-2.396C2.806 8.756 3.63 8.25 4.51 8.25H6.75z"></path></svg>
+                                            </button>
+                                        </div>
+                                        <div class="sm:w-1/3">
+                                            <img src="./resources/psychosocial.png" alt="Image for psychosocial disability" class="rounded-md shadow-sm w-full">
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                             <!-- Card 5: Invisible Disabilities -->
-                            <div class="p-6 border rounded-lg bg-gray-50">
-                                <h4 class="text-lg font-medium text-gray-800 mb-4">Invisible Disabilities</h4>
-                                <div class="flex flex-col sm:flex-row items-center gap-4">
-                                    <div class="sm:w-2/3">
-                                        Remember, not all disabilities are visible. A person might have chronic pain or a mental health condition that isn't obvious. Always be respectful and avoid assumptions.
-                                        <button class="tts-button" aria-label="Listen to invisible disabilities description" data-tts-text="Invisible Disabilities. Remember, not all disabilities are visible. A person might have chronic pain or a mental health condition that isn't obvious. Always be respectful and avoid assumptions.">
-                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19.114 5.636a9 9 0 010 12.728M16.463 8.288a5.25 5.25 0 010 7.424M6.75 8.25l4.72-4.72a.75.75 0 011.28.53v15.88a.75.75 0 01-1.28.53l-4.72-4.72H4.51c-.88 0-1.704-.507-1.938-1.354A9.01 9.01 0 012.25 12c0-.83.112-1.633.322-2.396C2.806 8.756 3.63 8.25 4.51 8.25H6.75z"></path></svg>
-                                        </button>
-                                    </div>
-                                    <div class="sm:w-1/3">
-                                        <img src="./resources/invisible.jpg" alt="Image for invisible disability" class="rounded-md shadow-sm w-full">
+                            <div class="border rounded-lg">
+                                <button class="accordion-button w-full flex justify-between items-center p-6 text-left text-lg font-medium text-gray-800 hover:bg-gray-50 focus:outline-none">
+                                    <span>Invisible Disabilities</span>
+                                    <svg class="w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                                </button>
+                                <div class="accordion-content bg-gray-50">
+                                    <div class="flex flex-col sm:flex-row items-center gap-4">
+                                        <div class="sm:w-2/3">
+                                            Remember, not all disabilities are visible. A person might have chronic pain or a mental health condition that isn't obvious. Always be respectful and avoid assumptions.
+                                            <button class="tts-button" aria-label="Listen to invisible disabilities description" data-tts-text="Invisible Disabilities. Remember, not all disabilities are visible. A person might have chronic pain or a mental health condition that isn't obvious. Always be respectful and avoid assumptions.">
+                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19.114 5.636a9 9 0 010 12.728M16.463 8.288a5.25 5.25 0 010 7.424M6.75 8.25l4.72-4.72a.75.75 0 011.28.53v15.88a.75.75 0 01-1.28.53l-4.72-4.72H4.51c-.88 0-1.704-.507-1.938-1.354A9.01 9.01 0 012.25 12c0-.83.112-1.633.322-2.396C2.806 8.756 3.63 8.25 4.51 8.25H6.75z"></path></svg>
+                                            </button>
+                                        </div>
+                                        <div class="sm:w-1/3">
+                                            <img src="./resources/invisible.jpg" alt="Image for invisible disability" class="rounded-md shadow-sm w-full">
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+
                 </div>
             </section>
         </div>
